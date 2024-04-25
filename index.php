@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['login'])){
-  header('Location: http://localhost/praktekweb/dashboard.php');
+  header('Location: http://localhost/praktekweb-1/dashboard.php');
 }
 ?>
 <!doctype html>
@@ -16,7 +16,7 @@ if(isset($_SESSION['login'])){
     <title>Signin Template · Bootstrap v5.3</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
-
+   
     
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -194,6 +194,10 @@ if(isset($_SESSION['login'])){
     <div class="form-floating">
       <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">Password</label>
+    </div>
+    <div class="form-floating">
+    <input type="umur" name="umur" class="form-control" placeholder="umur">
+    <label for="floatingInput">umur</label>
     </div>
     <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
     <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
